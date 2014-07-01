@@ -6011,6 +6011,8 @@ body.modal-open,
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
+  padding: 12px;
+  margin: 0 auto;
   display: block;
   height: auto;
   max-width: 100%;
