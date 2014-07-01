@@ -6015,6 +6015,7 @@ body.modal-open,
   margin: 0 auto;
   display: block;
   height: auto;
+  max-height: 300px;
   max-width: 100%;
   line-height: 1;
 }
