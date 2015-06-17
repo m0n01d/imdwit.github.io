@@ -1,0 +1,15 @@
+html, body {height: 100%;}
+body {
+  font-family: sans-serif;
+}
+
+#wrapper {
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+#banner {
+
+
+}
