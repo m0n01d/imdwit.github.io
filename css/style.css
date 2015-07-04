@@ -1,15 +1,108 @@
-html, body {height: 100%;}
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500);
+html, body {height: 100%; width: 100%}
 body {
-  font-family: sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.5;
 }
 
-#wrapper {
+h1,h2,h3,h4 {
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+.lead {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.inline li {
+  display: inline-block;
+}
+
+.outline {
+  outline: 1px solid red;
+}
+
+.content {
+  height: 100%;
+}
+
+.content:nth-child(even) {
+  background: black;
+  background-image: url('dark_wood_@2X.png');
+  color: white;
+}
+
+  .content a {
+    color: #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .content a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+h1 {
+  font-size: 2.35em;
+}
+.intro {
+  font-size: 1.35em;
   position: relative;
-  top: 30%;
+  top: 25%;
 }
 
-#banner {
-
-
+.middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+.navbar {
+  z-index: 1;
+  background: white;
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  position: relative;
+  float: right;
+}
+  .nav li{
+    display: inline-block;
+  }
+    .nav li a {
+      display: block;
+      padding: 10px 15px;
+      color: black;
+
+    }
+    .nav li a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: -1px;
+    }
