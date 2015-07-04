@@ -47,8 +47,35 @@ h4 {
   outline: 1px solid red;
 }
 
+.navbar {
+  z-index: 1;
+  background: white;
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  position: relative;
+  float: right;
+}
+  .nav li{
+    display: inline-block;
+  }
+    .nav li a {
+      display: block;
+      padding: 10px 15px;
+      color: black;
+
+    }
+    .nav li a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: -1px;
+    }
+
 .content {
-  height: 100%;
+  overflow-x:hidden;
+  padding: 30% 0 40% 0;
 }
 
 .content:nth-child(even) {
@@ -77,32 +104,5 @@ h1 {
 
 .middle {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-.navbar {
-  z-index: 1;
-  background: white;
-  position: fixed;
-  width: 100%;
 }
-
-.nav {
-  position: relative;
-  float: right;
-}
-  .nav li{
-    display: inline-block;
-  }
-    .nav li a {
-      display: block;
-      padding: 10px 15px;
-      color: black;
-
-    }
-    .nav li a:hover {
-      text-decoration: none;
-      border-bottom: 1px solid black;
-      margin-bottom: -1px;
-    }
