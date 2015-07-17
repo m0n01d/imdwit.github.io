@@ -108,5 +108,16 @@ h1 {
 
 .middle {
   position: relative;
+}
 
+input, textarea {
+  color: black;
+  display: block;
+  margin: 5px auto;
+  width: 50%;
+}
+#submit {
+  color: black;
+  display: block;
+  padding: 5px 8px;
 }

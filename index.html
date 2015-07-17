@@ -91,21 +91,26 @@
 		<section class="content " id="contact">
 			<div class="row middle container-fluid">
 				<div class="col-sm-offset-1 col-sm-5">
-					<p class="lead">More Info:</p>
+					<p class="lead text-center">More Info:</p>
 					<div class="col-xs-offset-1">
 						<p>I daily a 91 Mazda Miata</p>
 						<p>I like to drive fast</p>
 						<p>I have 2 cats</p>
 					</div>
 					<ul class="inline">
-						<li><a href="#">Github</a></li>
-						<li><a href="#">CodePen</a></li>
+						<li><a href="https://github.com/imdwit" target="_blank">Github</a></li>
+						<li><a href="http://codepen.io/imdwit/" target="_blank">CodePen</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-offset-1 col-sm-5">
-					<p class="lead">If you'd like to know more</p>
-					<textarea></textarea>
-					<input type="submit" value="Send it" />
+					<form action="//formspree.io/dwightdoane@me.com" method="POST">
+						<p class="lead text-center">If you'd like to know more</p>
+						<textarea placeholder="Say Hello" name="message"></textarea>
+						<input type="email" placeholder="email" required name="_replyto" />
+						<input type="hidden" name="_next" value="http://dwit.us" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="submit" value="Send it" id="submit" />
+					</form>
 				</div>
 			</div>
 		</section>
