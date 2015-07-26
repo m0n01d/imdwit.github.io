@@ -121,3 +121,13 @@ input, textarea {
   display: block;
   padding: 5px 8px;
 }
+
+
+.project-wrapper {
+  padding: 5px 10px;
+  margin: 4px auto;
+}
+
+.project-wrapper img {
+  margin: 0 auto;
+}
