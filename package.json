@@ -1,0 +1,25 @@
+{
+  "name": "imdwit.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website of Dwight Doane",
+  "main": "app.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "browser-sync start --server --files \"*.html, css/*.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imdwit/imdwit.github.io.git"
+  },
+  "author": "dwight doane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imdwit/imdwit.github.io/issues"
+  },
+  "homepage": "https://github.com/imdwit/imdwit.github.io#readme"
+}
