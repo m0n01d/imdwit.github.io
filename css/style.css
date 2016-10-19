@@ -37,14 +37,13 @@ h4 {
 .wrapper {
   display: flex;
   flex-direction: column;
-
   flex-grow: 1;
 }
 
 .wrapper__item {
   box-sizing: border-box;
   padding: 0 1em;
-  margin: 0 auto;
+  margin: 0;
 }
 
 @media (min-width: 76.8rem) {
