@@ -101,3 +101,7 @@ h4 {
 .footer-links__github:hover {
   color: #ad480d;
 }
+
+.footer-links__linkedin {
+  color: #0077b5;
+}
