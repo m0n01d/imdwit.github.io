@@ -46,22 +46,6 @@ h4 {
   margin: 0;
 }
 
-@media (min-width: 76.8rem) {
-  .wrapper {
-    flex-direction: row;
-    margin-top: 4rem;
-  }
-
-  .wrapper__item {
-    flex: 1 1 90%;
-    text-align: center;
-  }
-
-  .hidden-lg {
-    display: none;
-  }
-}
-
 .about__heading,
 .personal__heading
 {
@@ -76,6 +60,13 @@ h4 {
 
 .footer-links {
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  flex: 1;
+  margin: 0.33rem 0;
 }
 
 .footer-links__twitter {
@@ -104,4 +95,24 @@ h4 {
 
 .footer-links__linkedin {
   color: #0077b5;
+}
+
+@media (min-width: 76.8rem) {
+  .wrapper {
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+
+  .wrapper__item {
+    flex: 1 1 90%;
+    text-align: center;
+  }
+
+  .hidden-lg {
+    display: none;
+  }
+
+  .footer-links {
+    display: block;
+  }
 }
