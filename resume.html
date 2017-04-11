@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Dwight Doane</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Dwight Doane
+					</h1>
+					<h2>
+						JavaScript &amp;&amp; Frontend Developer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">dwightdoane@me.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(904) 330-8499</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://dwit.us">http://dwit.us</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Dwight Doane is a passionate web developer with a love for all things JavaScript.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://twitter.com/iamdwit">@iamdwit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Startup Media</span>
+					<span class="date">
+						2015-11-01 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://startupmedia.com">http://startupmedia.com</a>
+				</div>
+				<div class="position">
+					Frontend Developer
+				</div>
+				<div class="summary">
+					<p>Worked with designers, DBAs, and stakeholders to build frontend applications like http://gogreenback.com.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Used Angular.js to build gogreenback&#x27;s webapp and webviews for the iOS/android app</li>
+					<li class="bullet">Used backbone.js to build an early company website</li>
+					<li class="bullet">Used Node.js and Angular.js to build a client login</li>
+					<li class="bullet"></li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>UCF Coding Bootcamp</span>
+					<span class="date">
+						2016-06-23 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://codingbootcamp.ce.ucf.edu/">https://codingbootcamp.ce.ucf.edu/</a>
+				</div>
+				<div class="position">
+					Teaching Assistant
+				</div>
+				<div class="summary">
+					<p>&#x27;HTML5, CSS3, JavaScript, jQuery, Node.js, Responsive Design, Heroku, Git, User Authentication, PHP frameworks like Laravel, React.js, MySQL, MongoDB, and more.*&#x27; Shared my experiences and knowledge with students. Helped them learn a wide range of topics. Graded their homework and provided inclass and virtual assistance.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">When possible I gave extracurricular lectures and activities to expose students to topics I thought they needed to know. Such as es6 features not covered in the curriculum and git fundamentals</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Trilogy Education Services</span>
+					<span class="date">
+						2017-03-01 — 2017-04-22
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.trilogyed.com/">http://www.trilogyed.com/</a>
+				</div>
+				<div class="position">
+					Software Test Engineer
+				</div>
+				<div class="summary">
+					<p>I was responsible for setting up test automation, as well as load testing apis</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Technology Club</span>
+					<span class="date">
+						2014-09-01 — 2015-01-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://organization.com/">http://organization.com/</a>
+				</div>
+				<div class="position">
+					Member
+				</div>
+				<div class="summary">
+					<p>The technology club brought students together to explore new areas of technology and computer sciences. Topics ranged from git and programming, to cyber security and hacking.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Helped organize club activities</li>
+					<li class="bullet">Built the first website with a fellow club member who was a web designer</li>
+					<li class="bullet">Gave an intro to git and github.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Valencia College</span>
+					<span class="date">
+						2014-08-01 — 2016-06-23
+					</span>
+				</h4>
+				<div class="area">
+					Computer Science
+				</div>
+				<div class="studyType">
+					Bachelor
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>C Programming</li>
+					<li>Java</li>
+					<li>Advanced Java</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="awards" class="row">
+		<aside class="col-sm-3">
+			<h3>Awards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Dean&#x27;s List</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					2015-05-14
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>Valencia College</strong>
+				</div>
+				<div class="summary">
+					Dean&#x27;s List. These students completed at least 6 credit hours, and earned between a 3.50 and 3.74 grade point average in all coursework. http://valenciacollege.edu/students/deanslist/spring2015.cfm.
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Medium</span>
+					<span class="date">
+						2014-10-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://medium.com/@dwightdoane"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>medium.com</strong>
+				</div>
+				<div class="summary">
+					<p>My old blog</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>blog</span>
+					<span class="date">
+						2014-10-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://logs.torchship.co"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>TorchShip</strong>
+				</div>
+				<div class="summary">
+					<p>Working on my side hustle. Where I write about my expiernces hacking on personal projects.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Node.js</li>
+					<li>mongodb</li>
+					<li>mysql</li>
+					<li>angular</li>
+					<li>react</li>
+					<li>vue &lt;3</li>
+					<li>git</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Automotive</h4>
+				</div>
+				<ul class="keywords">
+					<li>Miata</li>
+					<li>Driving fast</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<p>Based on <a href="https://jsonresume.org/" target="_blank">JSON Resume</a></p>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
