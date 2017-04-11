@@ -96,14 +96,14 @@
     {
       "name": "Medium",
       "publisher": "medium.com",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "2016-07",
       "website": "https://medium.com/@dwightdoane",
       "summary": "My old blog"
     },
     {
       "name": "blog",
       "publisher": "TorchShip",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "2017-04",
       "website": "http://logs.torchship.co",
       "summary": "Working on my side hustle. Where I write about my expiernces hacking on personal projects."
     }
