@@ -6,7 +6,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.13.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
