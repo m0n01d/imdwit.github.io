@@ -47,14 +47,12 @@ h4 {
 }
 
 .about__heading,
-.personal__heading
-{
+.personal__heading {
   font-size: 1.8rem;
 }
 
 .about__txt,
-.personal__txt
- {
+.personal__txt {
   font-size: 1.6rem;
 }
 
@@ -97,6 +95,12 @@ h4 {
   color: #0077b5;
 }
 
+.me {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
 @media (min-width: 76.8rem) {
   .wrapper {
     flex-direction: row;
@@ -105,7 +109,6 @@ h4 {
 
   .wrapper__item {
     flex: 1 1 90%;
-    text-align: center;
   }
 
   .hidden-lg {
