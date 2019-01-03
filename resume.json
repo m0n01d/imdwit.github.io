@@ -1,27 +1,36 @@
 {
   "basics": {
     "name": "Dwight Doane",
-    "label": "JavaScript && Frontend Developer",
+    "label": "Elm && JavaScript Developer",
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
-    "website": "http://dwit.us",
-    "summary": "Dwight Doane is a passionate web developer with a love for all things JavaScript.",
+    "website": "https://dwit.us",
+    "summary": "Dwight Doane is a passionate developer obsessed with the World Wide Web.",
     "location": {
       "postalCode": "32828",
       "city": "Orlando",
       "countryCode": "US",
       "region": "Florida"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "@iamdwit",
-        "url": "https://twitter.com/iamdwit"
-      }
-    ]
+    "profiles": [{
+      "network": "Twitter",
+      "username": "@iamdwit",
+      "url": "https://twitter.com/iamdwit"
+    }]
   },
-  "work": [
+  "work": [{
+      "compnay": "Omicron Media, Inc",
+      "position": "Frontend Developer",
+      "website": "http://halogen.tv",
+      "startDate": "2017-11-13",
+      "summary": "Using Elm, JavaScript and Web Components to build a modern live streaming platform, called Halogen, for artists and creatives",
+      "highlights": [
+        "Halogen is over 50k lines",
+        "Helped transition an Elm app from 0.18 and BEM style CSS, to TailwindCSS and upgraded to 0.19 version of Elm",
+        "I own (most of) the Accessibility work. Accessibility is very important to me. So I try to make our app as accessible as possible."
+      ]
+    },
     {
       "company": "Web Benefits Design",
       "position": "Frontend Developer",
@@ -56,7 +65,7 @@
       "endDate": "2017-08-16",
       "summary": "'HTML5, CSS3, JavaScript, jQuery, Node.js, Responsive Design, Heroku, Git, User Authentication, PHP frameworks like Laravel, React.js, MySQL, MongoDB, and more.*' Shared my experiences and knowledge with students. Helped them learn a wide range of topics. Graded their homework and provided inclass and virtual assistance.",
       "highlights": [
-        "When possible I gave extracurricular lectures and activities to expose students to topics I thought they needed to know. Such as es6 features and functional programming techniques not covered in the curriculum as well as git fundamentals"
+        "When possible I gave extracurricular lectures and activities to expose students to topics I thought they needed to know. Such as es6 features, functional programming techniques and  git fundamentals"
       ]
     },
     {
@@ -68,94 +77,79 @@
       "summary": "I was responsible for setting up test automation, as well as load testing apis. From setting up unit testing for React components, and End to End testing some user flows."
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Technology Club",
-      "position": "Member",
-      "website": "http://organization.com/",
-      "startDate": "2014-09-01",
-      "endDate": "2015-01-01",
-      "summary": "The technology club brought students together to explore new areas of technology and computer sciences. Topics ranged from git and programming, to cyber security and hacking.",
-      "highlights": [
-        "Helped organize club activities",
-        "Built the first website with a fellow club member who was a web designer",
-        "Gave an intro to git and github."
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Valencia College",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2014-08-01",
-      "endDate": "2016-06-23",
-      "gpa": "3.5X",
-      "courses": [
-        "C Programming",
-        "Java",
-        "Advanced Java"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Dean's List",
-      "date": "2015-05-14",
-      "awarder": "Valencia College",
-      "summary": "Dean's List. These students completed at least 6 credit hours, and earned between a 3.50 and 3.74 grade point average in all coursework. http://valenciacollege.edu/students/deanslist/spring2015.cfm."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Medium",
-      "publisher": "medium.com",
-      "releaseDate": "2016-07",
-      "website": "https://medium.com/@dwightdoane",
-      "summary": "My old blog"
-    },
-    {
-      "name": "blog",
-      "publisher": "TorchShip",
-      "releaseDate": "2017-04",
-      "website": "http://logs.torchship.co",
-      "summary": "Working on my side hustle. Where I write about my expiernces hacking on personal projects."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Mid",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "mongodb",
-        "mysql",
-        "angular",
-        "react",
-        "redux",
-        "vue <3",
-        "vuex",
-        "git",
-        "functional programming",
-        "(learning) elm"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Automotive",
+  "volunteer": [{
+    "organization": "Technology Club",
+    "position": "Member",
+    "website": "http://organization.com/",
+    "startDate": "2014-09-01",
+    "endDate": "2015-01-01",
+    "summary": "The technology club brought students together to explore new areas of technology and computer sciences. Topics ranged from git and programming, to cyber security and hacking.",
+    "highlights": [
+      "Helped organize club activities",
+      "Built the first website with a fellow club member who was a web designer",
+      "Gave an intro to git and github."
+    ]
+  }],
+  "education": [{
+    "institution": "Valencia College",
+    "area": "Computer Science",
+    "studyType": "Bachelor",
+    "startDate": "2014-08-01",
+    "endDate": "2016-06-23",
+    "gpa": "3.5X",
+    "courses": [
+      "C Programming",
+      "Java",
+      "Advanced Java"
+    ]
+  }],
+  "awards": [{
+    "title": "Dean's List",
+    "date": "2015-05-14",
+    "awarder": "Valencia College",
+    "summary": "Dean's List. These students completed at least 6 credit hours, and earned between a 3.50 and 3.74 grade point average in all coursework. http://valenciacollege.edu/students/deanslist/spring2015.cfm."
+  }],
+  "publications": [{
+    "name": "blog",
+    "publisher": "TorchShip",
+    "releaseDate": "2017-04",
+    "website": "http://logs.torchship.co",
+    "summary": "Working on my side hustle. Where I write about my expiernces hacking on personal projects. (WIP)"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Mid",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "mongodb",
+      "mysql",
+      "angular 1",
+      "react",
+      "redux",
+      "vue",
+      "vuex",
+      "git",
+      "Elm",
+      "(Learning) Haskell",
+      "functional programming"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+      "name": "Fun Stuff",
       "keywords": [
         "Miatas",
-        "Driving fast"
+        "WRX",
+        "Driving fast",
+        "Camping",
+        "Outdoor Recreation",
+        "Travel"
       ]
     },
     {
@@ -168,10 +162,11 @@
         "automation",
         "IOT",
         "node",
-        "JavaScript"
+        "JavaScript",
+        "creative coding",
+        "Teaching!"
       ]
     }
   ],
-  "references": [
-  ]
+  "references": []
 }
