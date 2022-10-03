@@ -5,7 +5,7 @@
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
-    "website": "https://dwit.us",
+    "website": "m0n01d.com",
     "summary": "Dwight Doane is a passionate developer obsessed with the World Wide Web.",
     "location": {
       "postalCode": "32205",
@@ -16,17 +16,32 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "@iamdwit",
-        "url": "https://twitter.com/iamdwit"
+        "username": "@m0n01d",
+        "url": "https://twitter.com/m0n01d"
       }
     ]
   },
   "work": [
     {
+      "company": "CareRev",
+      "position": "Senior Frontend Engineer",
+      "website": "https://carerev.com",
+      "startDate": "2021-08-14",
+      "summary": "Helped rewrite CareRev's React.js based Facility app into a modern Elm application.",
+      "highlights": [
+        "Mentored junior engineers learning Elm",
+        "Onboarded engineers of various skill level into an Elm codebase",
+        "Setup code practices and standards for Elm development",
+        "Worked with designers to implement a design system using TailwindCSS",
+        "Shipped."
+      ]
+    },
+    {
       "company": "Triller",
       "position": "Senior Frontend Developer",
       "website": "https://triller.co",
       "startDate": "2020-09-04",
+      "endDate": "2021-08-01",
       "summary": "Halogen was acquired by Triller, where we built out the TrillerLive experience using Elm, tailwindcss, and a lot of elbow grease",
       "highlights": [
         "Halogen was acquired",
@@ -41,7 +56,7 @@
       "endDate": "2020-09-04",
       "summary": "Using Elm, JavaScript and Web Components to build a modern live streaming platform, called Halogen, for artists and creatives",
       "highlights": [
-        "Halogen was over 120k lines",
+        "Halogen was over 120k lines of Elm",
         "Helped transition an Elm app from 0.18 and BEM style CSS, to TailwindCSS and upgraded to 0.19 version of Elm"
       ]
     },
