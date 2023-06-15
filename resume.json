@@ -5,21 +5,15 @@
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
-    "website": "m0n01d.com",
-    "summary": "Dwight Doane is a passionate developer obsessed with the World Wide Web.",
+    "website": "https://m0n01d.com",
+    "summary": "Dwight Doane is a passionate developer obsessed with the World Wide Web and functional programming.",
     "location": {
       "postalCode": "32205",
       "city": "Jacksonville",
       "countryCode": "US",
       "region": "Florida"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "@m0n01d",
-        "url": "https://twitter.com/m0n01d"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
@@ -27,12 +21,17 @@
       "position": "Senior Frontend Engineer",
       "website": "https://carerev.com",
       "startDate": "2021-08-14",
+      "endDate": "2023-06-16",
       "summary": "Helped rewrite CareRev's React.js based Facility app into a modern Elm application.",
       "highlights": [
+        "Conducted hiring interviews, and created code challenges to vet candidates",
+        "helped more than double the codebase while shipping high quality  features on time and budget",
+        "used codegen tools to automate and script tedious tasks like Amplitude tracking",
         "Mentored junior engineers learning Elm",
         "Onboarded engineers of various skill level into an Elm codebase",
         "Setup code practices and standards for Elm development",
         "Worked with designers to implement a design system using TailwindCSS",
+        "Setup storybook for visualizing our design system and Ui",
         "Shipped."
       ]
     },
