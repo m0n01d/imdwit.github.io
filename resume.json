@@ -5,8 +5,8 @@
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
-    "website": "https://m0n01d.com",
-    "summary": "Dwight Doane is a passionate developer obsessed with the World Wide Web and functional programming.",
+    "website": "https://github.com/m0n01d",
+    "summary": "Dwight Doane is a passionate developer with nearly a decade of experience shipping quality features and building high perfomance teams.",
     "location": {
       "postalCode": "32205",
       "city": "Jacksonville",
@@ -22,17 +22,19 @@
       "website": "https://carerev.com",
       "startDate": "2021-08-14",
       "endDate": "2023-06-16",
-      "summary": "Helped rewrite CareRev's React.js based Facility app into a modern Elm application.",
+      "summary": "Rewrote CareRev's React.js based Facility app into a modern Elm application.",
       "highlights": [
+        "Helped hospitals staff qualified Nurses and helped save lives",
+        "Rearchitected the start of CareRev's React -> Elm rewrite",
+        "Mentored junior engineers and trained senior level engineers on pure functional concepts",
         "Conducted hiring interviews, and created code challenges to vet candidates",
-        "helped more than double the codebase while shipping high quality  features on time and budget",
-        "used codegen tools to automate and script tedious tasks like Amplitude tracking",
-        "Mentored junior engineers learning Elm",
+        "Used codegen tools to automate and script tedious tasks like Amplitude tracking and updating tracking plans",
         "Onboarded engineers of various skill level into an Elm codebase",
         "Setup code practices and standards for Elm development",
         "Worked with designers to implement a design system using TailwindCSS",
-        "Setup storybook for visualizing our design system and Ui",
-        "Shipped."
+        "Setup storybook for visualizing our design system and reusable Ui",
+        "Our platform empowered Nurses to take control of their careers",
+        "Shipped high impact features and services like Smart Rates to high profile clients, saving them time and money."
       ]
     },
     {
@@ -41,22 +43,29 @@
       "website": "https://triller.co",
       "startDate": "2020-09-04",
       "endDate": "2021-08-01",
-      "summary": "Halogen was acquired by Triller, where we built out the TrillerLive experience using Elm, tailwindcss, and a lot of elbow grease",
+      "summary": "My team completely rebuilt Halogen and quickly integrated it into Triller's platform.",
       "highlights": [
-        "Halogen was acquired",
-        "Celebrities like JLO and DJ Khaled use our scheduled stream, and livestreaming capabilities."
+        "Halogen was acquired by triller to build their Live Streaming service and add a Web App to their suite of tools.",
+        "Celebrities like Jennifer Lopez and DJ Khaled use our scheduled stream, and livestreaming tools to entertain thousands of adoring fans.",
+        "Triller used our platform to host the Verzuz rap battle series where users could vote on who was winning the battle in realtime.",
+        "Working at Triller and Omicron unlocked a passion for reverse engineering web applications."
       ]
     },
     {
-      "compnay": "Omicron Media, Inc",
+      "company": "Omicron Media, Inc",
       "position": "Frontend Developer",
       "website": "https://omicronmedia.com",
       "startDate": "2017-11-13",
       "endDate": "2020-09-04",
-      "summary": "Using Elm, JavaScript and Web Components to build a modern live streaming platform, called Halogen, for artists and creatives",
+      "summary": "Buit Halogen using Elm, JavaScript and Web Components to provide users a modern live streaming platform for artists and creatives",
       "highlights": [
-        "Halogen was over 120k lines of Elm",
-        "Helped transition an Elm app from 0.18 and BEM style CSS, to TailwindCSS and upgraded to 0.19 version of Elm"
+        "Halogen was over 120k lines of Elm and then was acquired.",
+        "Helped transition an Elm app from 0.18 and BEM style CSS, to TailwindCSS and upgraded to 0.19 version of Elm",
+        "Onboarded and trained React engineers in Elm and functional programming",
+        "Used modern responsive design practices to support mobile and desktop viewers and provide them with an enjoyable experience.",
+        "Worked with passionate and driven engineers, designers, and stakeholders to deliver robust features in short sprints.",
+        "Agile practices helped us move quickly with changing requirements and shortened deadlines.",
+        "Fans could tip, gift, chat and watch live or prerecorded content."
       ]
     },
     {
@@ -93,7 +102,8 @@
       "endDate": "2017-08-16",
       "summary": "'HTML5, CSS3, JavaScript, jQuery, Node.js, Responsive Design, Heroku, Git, User Authentication, PHP frameworks like Laravel, React.js, MySQL, MongoDB, and more.*' Shared my experiences and knowledge with students. Helped them learn a wide range of topics. Graded their homework and provided inclass and virtual assistance.",
       "highlights": [
-        "When possible I gave extracurricular lectures and activities to expose students to topics I thought they needed to know. Such as es6 features, functional programming techniques and  git fundamentals"
+        "When possible I gave extracurricular lectures and activities to expose students to topics I thought they needed to know. Such as es6 features, functional programming techniques and  git fundamentals",
+        "Teaching at the bootcamp unlocked a passion for education and mentoring"
       ]
     },
     {
@@ -105,69 +115,38 @@
       "summary": "I was responsible for setting up test automation, as well as load testing apis. From setting up unit testing for React components, and End to End testing some user flows."
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Technology Club",
-      "position": "Member",
-      "website": "http://organization.com/",
-      "startDate": "2014-09-01",
-      "endDate": "2015-01-01",
-      "summary": "The technology club brought students together to explore new areas of technology and computer sciences. Topics ranged from git and programming, to cyber security and hacking.",
-      "highlights": [
-        "Helped organize club activities",
-        "Built the first website with a fellow club member who was a web designer",
-        "Gave an intro to git and github."
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Valencia College",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2014-08-01",
-      "endDate": "2016-06-23",
-      "gpa": "3.5X",
-      "courses": ["C Programming", "Java", "Advanced Java"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Dean's List",
-      "date": "2015-05-14",
-      "awarder": "Valencia College",
-      "summary": "Dean's List. These students completed at least 6 credit hours, and earned between a 3.50 and 3.74 grade point average in all coursework. http://valenciacollege.edu/students/deanslist/spring2015.cfm."
-    }
-  ],
   "publications": [
     {
       "name": "blog",
-      "publisher": "TorchShip",
-      "releaseDate": "2017-04",
-      "website": "https://dwit.us/blog",
-      "summary": "Working on my side hustle. Where I write about my experiences hacking on personal projects. (WIP)"
+      "publisher": "ElmForReactDevs",
+      "releaseDate": "2023-06",
+      "website": "https://www.youtube.com/@elmforreactdevs",
+      "summary": "Creating videos and content to help React Developers transition to Elm and a functional programming ecosystem."
     }
   ],
   "skills": [
     {
       "name": "Web Development",
-      "level": "Mid",
+      "level": "Senior",
       "keywords": [
-        "HTML",
+        "Elm",
+        "Semantic HTML",
         "CSS",
         "JavaScript",
+        "Functional Programming Concepts",
         "Node.js",
         "mongodb",
         "mysql",
-        "angular 1",
         "react",
         "redux",
         "vue",
         "vuex",
         "git",
-        "Elm",
-        "(Learning) Haskell",
-        "functional programming"
+        "tailwindcss",
+
+        "Learning Haskell and PureScript",
+        "Teaching",
+        "Mentoring"
       ]
     }
   ],
@@ -182,28 +161,12 @@
       "name": "Fun Stuff",
       "keywords": [
         "Miatas",
-        "WRX",
         "Driving fast",
         "Camping",
         "Outdoor Recreation",
         "Travel"
       ]
-    },
-    {
-      "name": "Software",
-      "keywords": [
-        "functional programming",
-        "performance",
-        "a11y",
-        "dev tools",
-        "automation",
-        "IOT",
-        "node",
-        "JavaScript",
-        "creative coding",
-        "Teaching!"
-      ]
     }
   ],
-  "references": []
+  "references": [{ "name": "References available upon request" }]
 }

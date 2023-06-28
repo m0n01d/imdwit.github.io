@@ -4,7 +4,11 @@
   "description": "Personal Website of Dwight Doane",
   "main": "app.js",
   "dependencies": {
-    "resume-cli": "^1.1.2"
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-macchiato": "^1.1.0",
+    "jsonresume-theme-onepage": "^0.0.3",
+    "jsonresume-theme-paper": "^0.5.0",
+    "resume-cli": "^3.0.8"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0"
