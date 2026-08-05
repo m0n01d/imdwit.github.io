@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Dwight Doane",
-    "label": "Senior Frontend Engineer — Elm && JavaScript",
+    "label": "Senior Software Engineer — Elm && JavaScript",
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
@@ -34,9 +34,9 @@
   "work": [
     {
       "company": "Avetta",
-      "position": "Senior Frontend Engineer",
+      "position": "Senior Software Engineer",
       "website": "https://www.avetta.com",
-      "startDate": "2023-07-01",
+      "startDate": "2024-01-01",
       "summary": "TODO: one-line description of what you worked on at Avetta.",
       "highlights": [
         "TODO: what you shipped and its impact",
