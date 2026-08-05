@@ -5,7 +5,6 @@
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
-    "website": "https://dwit.us",
     "summary": "Software engineer with over a decade of experience shipping quality features and building high-performance teams. Works across the stack in Elm and Scala, and specializes in functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.",
     "location": {
       "postalCode": "32205",
@@ -23,11 +22,6 @@
         "network": "LinkedIn",
         "username": "dwight-doane",
         "url": "https://www.linkedin.com/in/dwight-doane-678aa9ba"
-      },
-      {
-        "network": "YouTube",
-        "username": "elmforreactdevs",
-        "url": "https://www.youtube.com/@elmforreactdevs"
       }
     ]
   },
@@ -196,15 +190,6 @@
         "macOS"
       ],
       "summary": "CLI and macOS menu bar plugin that surfaces the open pull requests actually waiting on you, with a badge when something is new since you last looked."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Elm for React Devs",
-      "publisher": "YouTube",
-      "releaseDate": "2023-06",
-      "website": "https://www.youtube.com/@elmforreactdevs",
-      "summary": "Videos and written content helping React developers transition to Elm and a functional programming ecosystem."
     }
   ],
   "skills": [
