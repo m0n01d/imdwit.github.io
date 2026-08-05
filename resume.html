@@ -406,7 +406,7 @@ ul.two-column li {
     <header class="resume-header clearfix">
         <div class="profile-header pull-left">
             <h1>Dwight Doane</h1>
-            <h2>Senior Software Engineer — Elm &amp;&amp; JavaScript</h2>
+            <h2>Senior Software Engineer — Elm &amp;&amp; Scala</h2>
         </div>
         <div class="profile-pic pull-right">
         </div>
@@ -487,6 +487,7 @@ ul.two-column li {
                             </div>                    <h4 class="bold capitalize">Senior</h4>
                             <div class="minimal flex-container">
                                     <h6 class="main-skill skill">Elm</h6>
+                                    <h6 class="main-skill skill">Scala</h6>
                                     <h6 class="main-skill skill">JavaScript</h6>
                                     <h6 class="main-skill skill">ReScript</h6>
                                     <h6 class="main-skill skill">Semantic HTML</h6>
@@ -517,6 +518,9 @@ ul.two-column li {
                                 <div class="keyline"></div>
                             </div>                    <h4 class="bold capitalize">Intermediate</h4>
                             <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">http4s</h6>
+                                    <h6 class="main-skill skill">Tapir</h6>
+                                    <h6 class="main-skill skill">Play</h6>
                                     <h6 class="main-skill skill">Node.js</h6>
                                     <h6 class="main-skill skill">Rust</h6>
                                     <h6 class="main-skill skill">MongoDB</h6>
@@ -574,7 +578,7 @@ ul.two-column li {
                         <h3>Summary</h3>
                         <div class="keyline"></div>
                     </div>            <p class="summary">
-                        Frontend engineer with over a decade of experience shipping quality features and building high-performance teams. Specializes in Elm and functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.
+                        Software engineer with over a decade of experience shipping quality features and building high-performance teams. Works across the stack in Elm and Scala, and specializes in functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.
                     </p>
                 </div>
         <div class="container work-container">
@@ -598,12 +602,15 @@ ul.two-column li {
                     <h4>Senior Software Engineer</h4>
         
         
-                    <p class="summary">TODO: one-line description of what you worked on at Avetta.</p>
+                    <p class="summary">Full-stack product engineer on Avetta&#x27;s supplier compliance platform, shipping features across a large production Elm frontend and Scala (http4s/Tapir and Play/MongoDB) backend services.</p>
         
                     <ul>
-                        <li>TODO: what you shipped and its impact</li>
-                        <li>TODO: the stack you worked in</li>
-                        <li>TODO: mentoring, standards, or hiring work</li>
+                        <li>Shipped creator filtering end to end for the Worksite Safety product: refined the epic into per-service tickets, then implemented all of them solo — Elm filter pickers across four list and calendar views, a Scala 3 http4s/Tapir aggregation service, and the Play/MongoDB persistence layer behind it</li>
+                        <li>Built the formula builder UI for the forms configuration tool, letting configuration engineers author, save, and live-test scoring calculations — cross-category questions, repeatable categories, function library — without engineering involvement</li>
+                        <li>Delivered review-chain management for client admins: site-specific settings pages, clear-all and revert-to-default flows, and safe-deletion UX with server-driven delete permissions and 409 conflict handling</li>
+                        <li>Shipped membership and connection-lifecycle features in the Connect product: renewal-date visibility for clients, connection removal and reconnect flows, and search and filtering on connections pages</li>
+                        <li>Raised the team&#x27;s code review bar with 419 review comments across 188 PRs, and distilled the org&#x27;s ~3,400-comment PR review history into living Elm and Scala style guides the team reviews against</li>
+                        <li>Built internal dev tooling, including a runtime Elm view inspector that maps any rendered DOM element back to its source function and line, with a component-tree overlay and lazy-render diagnostics</li>
                     </ul>
                 </section>
                 <section class="item">

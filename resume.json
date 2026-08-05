@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Dwight Doane",
-    "label": "Senior Software Engineer — Elm && JavaScript",
+    "label": "Senior Software Engineer — Elm && Scala",
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
     "website": "https://dwit.us",
-    "summary": "Frontend engineer with over a decade of experience shipping quality features and building high-performance teams. Specializes in Elm and functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.",
+    "summary": "Software engineer with over a decade of experience shipping quality features and building high-performance teams. Works across the stack in Elm and Scala, and specializes in functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.",
     "location": {
       "postalCode": "32205",
       "city": "Jacksonville",
@@ -37,11 +37,14 @@
       "position": "Senior Software Engineer",
       "website": "https://www.avetta.com",
       "startDate": "2024-01-01",
-      "summary": "TODO: one-line description of what you worked on at Avetta.",
+      "summary": "Full-stack product engineer on Avetta's supplier compliance platform, shipping features across a large production Elm frontend and Scala (http4s/Tapir and Play/MongoDB) backend services.",
       "highlights": [
-        "TODO: what you shipped and its impact",
-        "TODO: the stack you worked in",
-        "TODO: mentoring, standards, or hiring work"
+        "Shipped creator filtering end to end for the Worksite Safety product: refined the epic into per-service tickets, then implemented all of them solo — Elm filter pickers across four list and calendar views, a Scala 3 http4s/Tapir aggregation service, and the Play/MongoDB persistence layer behind it",
+        "Built the formula builder UI for the forms configuration tool, letting configuration engineers author, save, and live-test scoring calculations — cross-category questions, repeatable categories, function library — without engineering involvement",
+        "Delivered review-chain management for client admins: site-specific settings pages, clear-all and revert-to-default flows, and safe-deletion UX with server-driven delete permissions and 409 conflict handling",
+        "Shipped membership and connection-lifecycle features in the Connect product: renewal-date visibility for clients, connection removal and reconnect flows, and search and filtering on connections pages",
+        "Raised the team's code review bar with 419 review comments across 188 PRs, and distilled the org's ~3,400-comment PR review history into living Elm and Scala style guides the team reviews against",
+        "Built internal dev tooling, including a runtime Elm view inspector that maps any rendered DOM element back to its source function and line, with a component-tree overlay and lazy-render diagnostics"
       ]
     },
     {
@@ -210,6 +213,7 @@
       "level": "Senior",
       "keywords": [
         "Elm",
+        "Scala",
         "JavaScript",
         "ReScript",
         "Semantic HTML",
@@ -236,6 +240,9 @@
       "name": "Backend && Systems",
       "level": "Intermediate",
       "keywords": [
+        "http4s",
+        "Tapir",
+        "Play",
         "Node.js",
         "Rust",
         "MongoDB",
