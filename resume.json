@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Dwight Doane",
-    "label": "Senior Software Engineer — Elm && Scala",
+    "label": "Elm && Scala Developer",
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
@@ -28,7 +28,7 @@
   "work": [
     {
       "company": "Avetta",
-      "position": "Senior Software Engineer",
+      "position": "Software Engineer II",
       "website": "https://www.avetta.com",
       "startDate": "2025-01-01",
       "summary": "Full-stack product engineer on Avetta's supplier compliance platform, shipping features across a large production Elm frontend and Scala (http4s/Tapir and Play/MongoDB) backend services.",
