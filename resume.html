@@ -399,14 +399,78 @@ ul.two-column li {
   border-radius: 5px;
 }
 </style>
-</head>
+<style>
+/* --- build-resume.js: pagination fixes --- */
+@media print {
+  /* The theme avoids breaking inside a whole container, which pushes a
+     tall section onto a fresh page and strands a mostly-empty one. Let
+     containers flow and keep individual entries intact instead. */
+  .container {
+    page-break-inside: auto;
+  }
+
+  .work-container .item,
+  .project-container .item,
+  .publications-container .item,
+  .education-container .item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Never leave a section heading alone at the foot of a page. */
+  .title {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Note: do NOT put page-break-inside on .left-column's children. The
+     sidebar is a float, and making its sections unbreakable pushes the
+     entire column to page 2, leaving page 1 single-column. */
+
+  /* .right-column uses overflow:hidden purely to contain the sidebar
+     float. That clips any content crossing a page boundary, so contain
+     the float with flow-root instead. */
+  .right-column {
+    overflow: visible;
+    display: flow-root;
+  }
+
+  /* Trailing padding below the last section can spill a few pixels past
+     the final page boundary, which Chromium honours by emitting an extra
+     blank sheet. Nothing renders below the last entry, so drop it. */
+  .page {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .page > *:last-child,
+  .container:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Tighten vertical rhythm so the whole resume lands on two sheets.
+     Spacing only — type sizes are untouched. */
+  .container {
+    padding-top: 12px;
+  }
+
+  .item {
+    margin-bottom: 9px;
+  }
+
+  ul {
+    margin-top: 6px;
+  }
+}
+</style></head>
 
 <body>
   <main id="resume" class="page">
     <header class="resume-header clearfix">
         <div class="profile-header pull-left">
             <h1>Dwight Doane</h1>
-            <h2>Elm &amp;&amp; JavaScript Developer</h2>
+            <h2>Elm &amp;&amp; Scala Developer</h2>
         </div>
         <div class="profile-pic pull-right">
         </div>
@@ -441,41 +505,88 @@ ul.two-column li {
                         <h6 class="info-text">(904) 330-8499</h6>
                 </div>
         
-                <div class="info-tag-container">
-                    <i class="fa fa-globe"></i>
-                
-                        <h6 class="info-text">
-                            <a href="https://github.com/m0n01d" target="_blank">
-                                github.com/m0n01d
-                            </a>
-                        </h6>
-                </div>
         
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-github"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://github.com/m0n01d" target="_blank">
+                                                 m0n01d
+                                             </a>
+                                         </h6>
+                                 </div>
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/dwight-doane-678aa9ba" target="_blank">
+                                                dwight-doane
+                                            </a>
+                                        </h6>
+                                </div>
         </section>
             <div class="skills-container">
                     <section class="container">
                             <div class="title">
-                                <h3>Web Development</h3>
+                                <h3>Core</h3>
                                 <div class="keyline"></div>
                             </div>                    <h4 class="bold capitalize">Senior</h4>
                             <div class="minimal flex-container">
                                     <h6 class="main-skill skill">Elm</h6>
+                                    <h6 class="main-skill skill">Scala</h6>
+                                    <h6 class="main-skill skill">JavaScript</h6>
+                                    <h6 class="main-skill skill">ReScript</h6>
                                     <h6 class="main-skill skill">Semantic HTML</h6>
                                     <h6 class="main-skill skill">CSS</h6>
-                                    <h6 class="main-skill skill">JavaScript</h6>
-                                    <h6 class="main-skill skill">Functional Programming Concepts</h6>
-                                    <h6 class="main-skill skill">Node.js</h6>
-                                    <h6 class="main-skill skill">mongodb</h6>
-                                    <h6 class="main-skill skill">mysql</h6>
-                                    <h6 class="main-skill skill">react</h6>
-                                    <h6 class="main-skill skill">redux</h6>
-                                    <h6 class="main-skill skill">vue</h6>
-                                    <h6 class="main-skill skill">vuex</h6>
-                                    <h6 class="main-skill skill">git</h6>
-                                    <h6 class="main-skill skill">tailwindcss</h6>
                                     <h6 class="main-skill skill">Learning Haskell and PureScript</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Frontend</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Senior</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">React</h6>
+                                    <h6 class="main-skill skill">Redux</h6>
+                                    <h6 class="main-skill skill">Vue</h6>
+                                    <h6 class="main-skill skill">Vuex</h6>
+                                    <h6 class="main-skill skill">TailwindCSS</h6>
+                                    <h6 class="main-skill skill">Storybook</h6>
+                                    <h6 class="main-skill skill">Web Components</h6>
+                                    <h6 class="main-skill skill">Responsive Design</h6>
+                                    <h6 class="main-skill skill">Design Systems</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Backend &amp;&amp; Systems</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Intermediate</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">http4s</h6>
+                                    <h6 class="main-skill skill">Tapir</h6>
+                                    <h6 class="main-skill skill">Play</h6>
+                                    <h6 class="main-skill skill">Node.js</h6>
+                                    <h6 class="main-skill skill">Rust</h6>
+                                    <h6 class="main-skill skill">MongoDB</h6>
+                                    <h6 class="main-skill skill">MySQL</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Practices</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Senior</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Functional Programming</h6>
+                                    <h6 class="main-skill skill">Git</h6>
+                                    <h6 class="main-skill skill">Testing</h6>
+                                    <h6 class="main-skill skill">Agile</h6>
+                                    <h6 class="main-skill skill">Code Review</h6>
                                     <h6 class="main-skill skill">Teaching</h6>
                                     <h6 class="main-skill skill">Mentoring</h6>
+                                    <h6 class="main-skill skill">Interviewing</h6>
                             </div>
                     </section>
             </div>
@@ -513,7 +624,7 @@ ul.two-column li {
                         <h3>Summary</h3>
                         <div class="keyline"></div>
                     </div>            <p class="summary">
-                        Dwight Doane is a passionate developer with nearly a decade of experience shipping quality features and building high perfomance teams.
+                        Software engineer with over a decade of experience shipping quality features and building high-performance teams. Works across the stack in Elm and Scala, and specializes in functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.
                     </p>
                 </div>
         <div class="container work-container">
@@ -521,6 +632,33 @@ ul.two-column li {
                 <h3>Experience</h3>
                 <div class="keyline"></div>
             </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.avetta.com" target="_blank">
+                                    Avetta
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2025</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Software Engineer II</h4>
+        
+        
+                    <p class="summary">Full-stack product engineer on Avetta&#x27;s supplier compliance platform, shipping features across a large production Elm frontend and Scala (http4s/Tapir and Play/MongoDB) backend services.</p>
+        
+                    <ul>
+                        <li>Shipped creator filtering end to end for the Worksite Safety product: refined the epic into per-service tickets, then implemented all of them solo — Elm filter pickers across four list and calendar views, a Scala 3 http4s/Tapir aggregation service, and the Play/MongoDB persistence layer behind it</li>
+                        <li>Built the formula builder UI for the forms configuration tool, letting configuration engineers author, save, and live-test scoring calculations — cross-category questions, repeatable categories, function library — without engineering involvement</li>
+                        <li>Delivered review-chain management for client admins: site-specific settings pages, clear-all and revert-to-default flows, and safe-deletion UX with server-driven delete permissions and 409 conflict handling</li>
+                        <li>Shipped membership and connection-lifecycle features in the Connect product: renewal-date visibility for clients, connection removal and reconnect flows, and search and filtering on connections pages</li>
+                        <li>Raised the team&#x27;s code review bar with 419 review comments across 188 PRs, and distilled the org&#x27;s ~3,400-comment PR review history into living Elm and Scala style guides the team reviews against</li>
+                        <li>Built internal dev tooling, including a runtime Elm view inspector that maps any rendered DOM element back to its source function and line, with a component-tree overlay and lazy-render diagnostics</li>
+                    </ul>
+                </section>
                 <section class="item">
                     <div class="section-header clearfix">
                         <h3 class="bold pull-left">
@@ -537,20 +675,16 @@ ul.two-column li {
                     <h4>Senior Frontend Engineer</h4>
         
         
-                    <p class="summary">Rewrote CareRev&#x27;s React.js based Facility app into a modern Elm application.</p>
+                    <p class="summary">Rewrote CareRev&#x27;s React-based Facility app as a modern Elm application, on a platform that helps hospitals staff qualified nurses and gives nurses control of their careers.</p>
         
                     <ul>
-                        <li>Helped hospitals staff qualified Nurses and helped save lives</li>
-                        <li>Rearchitected the start of CareRev&#x27;s React -&gt; Elm rewrite</li>
-                        <li>Mentored junior engineers and trained senior level engineers on pure functional concepts</li>
-                        <li>Conducted hiring interviews, and created code challenges to vet candidates</li>
-                        <li>Used codegen tools to automate and script tedious tasks like Amplitude tracking and updating tracking plans</li>
-                        <li>Onboarded engineers of various skill level into an Elm codebase</li>
-                        <li>Setup code practices and standards for Elm development</li>
-                        <li>Worked with designers to implement a design system using TailwindCSS</li>
-                        <li>Setup storybook for visualizing our design system and reusable Ui</li>
-                        <li>Our platform empowered Nurses to take control of their careers</li>
-                        <li>Shipped high impact features and services like Smart Rates to high profile clients, saving them time and money.</li>
+                        <li>Re-architected the start of CareRev&#x27;s React to Elm rewrite</li>
+                        <li>Shipped high-impact features and services like Smart Rates to high-profile clients, saving them time and money</li>
+                        <li>Mentored junior engineers and trained senior engineers on pure functional concepts</li>
+                        <li>Onboarded engineers of every skill level into an Elm codebase, and set the code practices and standards for Elm development</li>
+                        <li>Built codegen tooling to automate tedious work like Amplitude tracking and tracking-plan updates</li>
+                        <li>Implemented a design system in TailwindCSS with designers, and set up Storybook to visualize it alongside reusable UI</li>
+                        <li>Conducted hiring interviews and authored the code challenges used to vet candidates</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -569,13 +703,12 @@ ul.two-column li {
                     <h4>Senior Frontend Developer</h4>
         
         
-                    <p class="summary">My team completely rebuilt Halogen and quickly integrated it into Triller&#x27;s platform.</p>
+                    <p class="summary">Rebuilt Halogen and integrated it into Triller&#x27;s platform after the acquisition, adding live streaming and a web app to their suite of tools.</p>
         
                     <ul>
-                        <li>Halogen was acquired by triller to build their Live Streaming service and add a Web App to their suite of tools.</li>
-                        <li>Celebrities like Jennifer Lopez and DJ Khaled use our scheduled stream, and livestreaming tools to entertain thousands of adoring fans.</li>
-                        <li>Triller used our platform to host the Verzuz rap battle series where users could vote on who was winning the battle in realtime.</li>
-                        <li>Working at Triller and Omicron unlocked a passion for reverse engineering web applications.</li>
+                        <li>Built the scheduled-stream and livestreaming tools used by artists like Jennifer Lopez and DJ Khaled to entertain thousands of fans</li>
+                        <li>Powered the Verzuz battle series, including realtime audience voting during broadcasts</li>
+                        <li>Reverse engineered web applications to bridge Halogen with Triller&#x27;s existing platform</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -594,16 +727,15 @@ ul.two-column li {
                     <h4>Frontend Developer</h4>
         
         
-                    <p class="summary">Buit Halogen using Elm, JavaScript and Web Components to provide users a modern live streaming platform for artists and creatives</p>
+                    <p class="summary">Built Halogen, a live streaming platform for artists and creatives, using Elm, JavaScript, and Web Components.</p>
         
                     <ul>
-                        <li>Halogen was over 120k lines of Elm and then was acquired.</li>
-                        <li>Helped transition an Elm app from 0.18 and BEM style CSS, to TailwindCSS and upgraded to 0.19 version of Elm</li>
+                        <li>Grew Halogen past 120k lines of Elm; the platform was acquired by Triller</li>
+                        <li>Led the upgrade from Elm 0.18 to 0.19 and the migration from BEM-style CSS to TailwindCSS</li>
                         <li>Onboarded and trained React engineers in Elm and functional programming</li>
-                        <li>Used modern responsive design practices to support mobile and desktop viewers and provide them with an enjoyable experience.</li>
-                        <li>Worked with passionate and driven engineers, designers, and stakeholders to deliver robust features in short sprints.</li>
-                        <li>Agile practices helped us move quickly with changing requirements and shortened deadlines.</li>
-                        <li>Fans could tip, gift, chat and watch live or prerecorded content.</li>
+                        <li>Shipped tipping, gifting, chat, and live and prerecorded playback features</li>
+                        <li>Applied modern responsive design practices to support both mobile and desktop viewers</li>
+                        <li>Delivered robust features in short sprints with engineers, designers, and stakeholders, using agile practices to absorb changing requirements and shortened deadlines</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -622,36 +754,11 @@ ul.two-column li {
                     <h4>Frontend Developer</h4>
         
         
-                    <p class="summary">Helped rewrite an aging php application using modern technologies: React, Redux w/middleware (redux-observables, redux-saga)</p>
+                    <p class="summary">Helped rewrite an aging PHP application using React and Redux with middleware (redux-observable, redux-saga).</p>
         
                     <ul>
-                        <li>Learned a lot about structuring a react/redux application</li>
-                        <li>Learned the basics of observables with rxjs</li>
-                        <li>Honed some functional programming skills</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="http://startupmedia.com" target="_blank">
-                                    Startup Media
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">11/2015</span>
-                                <span class="endDate"> - 07/2017</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Frontend Developer</h4>
-        
-        
-                    <p class="summary">Worked with designers, DBAs, and stakeholders to build frontend applications like http://gogreenback.com.</p>
-        
-                    <ul>
-                        <li>Used Angular.js to build gogreenback&#x27;s webapp, and webviews for the iOS/android app</li>
-                        <li>Used backbone.js to build an early company website</li>
-                        <li>Used Node.js and Angular.js to build a client dashboard</li>
+                        <li>Learned to structure a large React/Redux application</li>
+                        <li>Picked up the fundamentals of observables with RxJS and honed functional programming skills</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -670,11 +777,11 @@ ul.two-column li {
                     <h4>Substitute Instructor &amp;&amp; Teaching Assistant</h4>
         
         
-                    <p class="summary">&#x27;HTML5, CSS3, JavaScript, jQuery, Node.js, Responsive Design, Heroku, Git, User Authentication, PHP frameworks like Laravel, React.js, MySQL, MongoDB, and more.*&#x27; Shared my experiences and knowledge with students. Helped them learn a wide range of topics. Graded their homework and provided inclass and virtual assistance.</p>
+                    <p class="summary">Taught and supported students across HTML5, CSS3, JavaScript, jQuery, Node.js, responsive design, Heroku, Git, user authentication, Laravel, React.js, MySQL, and MongoDB. Graded homework and provided in-class and virtual assistance.</p>
         
                     <ul>
-                        <li>When possible I gave extracurricular lectures and activities to expose students to topics I thought they needed to know. Such as es6 features, functional programming techniques and  git fundamentals</li>
-                        <li>Teaching at the bootcamp unlocked a passion for education and mentoring</li>
+                        <li>Gave extracurricular lectures on topics students needed but the curriculum skipped: ES6 features, functional programming techniques, and Git fundamentals</li>
+                        <li>Discovered a lasting passion for education and mentoring</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -693,32 +800,156 @@ ul.two-column li {
                     <h4>Software Test Engineer</h4>
         
         
-                    <p class="summary">I was responsible for setting up test automation, as well as load testing apis. From setting up unit testing for React components, and End to End testing some user flows.</p>
+                    <p class="summary">Set up test automation and load tested APIs, from unit testing React components to end-to-end coverage of user flows.</p>
         
                 </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="http://startupmedia.com" target="_blank">
+                                    Startup Media
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/2015</span>
+                                <span class="endDate"> - 07/2017</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Frontend Developer</h4>
+        
+        
+                    <p class="summary">Built frontend applications with designers, DBAs, and stakeholders, including gogreenback.com.</p>
+        
+                    <ul>
+                        <li>Built gogreenback&#x27;s web app in Angular.js, plus the webviews used by its iOS and Android apps</li>
+                        <li>Built an early company website in Backbone.js and a client dashboard in Node.js and Angular.js</li>
+                    </ul>
+                </section>
         </div>
-        <div class="container publications-container">
+        <div class="container project-container">
             <div class="title">
-                <h3>Publications</h3>
+                <h3>Open Source Projects</h3>
                 <div class="keyline"></div>
             </div>
-            <section class="item">
-                <div class="section-header clearfix">
-                    <h3 class="bold pull-left">
-                            <a href="https://www.youtube.com/@elmforreactdevs" target="_blank">
-                                blog
-                            </a>
-                    </h3>
-                    <h5 class="italic pull-right">
-                            06/2023
-                            </h5>
-                </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/elm-peek" target="_blank">
+                                    elm-peek
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/elm-peek" target="_blank" class="sublink">https://github.com/m0n01d/elm-peek</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
         
-                <h5 class="awarder">ElmForReactDevs</h5>
+                        <h5>Author</h5>
         
-                <p class="summary">Creating videos and content to help React Developers transition to Elm and a functional programming ecosystem.</p>
+                    <div class="flex-container">
+                            <h6 class="skill">ReScript</h6>
+                            <h6 class="skill">React</h6>
+                            <h6 class="skill">Chrome Extension</h6>
+                            <h6 class="skill">Elm</h6>
+                    </div>
         
-            </section>
+                    <p class="summary">Browser extension that brings code navigation to Elm on GitHub, which GitHub&#x27;s own stack-graphs don&#x27;t cover. Hover an identifier for its definition and dependents, and get warned when a case expression silently swallows a variant the pull request just added.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/resq" target="_blank">
+                                    resq
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/resq" target="_blank" class="sublink">https://github.com/m0n01d/resq</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                        <h5>Author</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Rust</h6>
+                            <h6 class="skill">ReScript</h6>
+                            <h6 class="skill">CLI</h6>
+                            <h6 class="skill">Developer Tooling</h6>
+                    </div>
+        
+                    <p class="summary">A jq-style CLI for querying and editing ReScript source, written in Rust and aimed at AI agents and scripts rather than editors: token-efficient structured reads and validated writes that leave the file byte-identical on failure. Ported from elmq.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/elm-view-name-injector" target="_blank">
+                                    elm-view-name-injector
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/elm-view-name-injector" target="_blank" class="sublink">https://github.com/m0n01d/elm-view-name-injector</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                        <h5>Author</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">JavaScript</h6>
+                            <h6 class="skill">Babel</h6>
+                            <h6 class="skill">Elm</h6>
+                            <h6 class="skill">DevTools</h6>
+                    </div>
+        
+                    <p class="summary">Post-compile transform that tags each Elm view function&#x27;s rendered element with the function that produced it, giving Elm the DevTools-style component names it otherwise lacks. No source changes, no wrapper nodes, no runtime library.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/elm-browser" target="_blank">
+                                    elm-browser
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/elm-browser" target="_blank" class="sublink">https://github.com/m0n01d/elm-browser</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                        <h5>Contributor</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Elm</h6>
+                            <h6 class="skill">JavaScript</h6>
+                            <h6 class="skill">Debugger</h6>
+                    </div>
+        
+                    <p class="summary">Fork of elm/browser that adds state-change highlighting to the time-travel debugger, flashing changed fields and striping their ancestors so you can see what changed instead of re-reading the whole model tree.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/pr-digest" target="_blank">
+                                    pr-digest
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/pr-digest" target="_blank" class="sublink">https://github.com/m0n01d/pr-digest</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                        <h5>Author</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Python</h6>
+                            <h6 class="skill">GitHub API</h6>
+                            <h6 class="skill">macOS</h6>
+                    </div>
+        
+                    <p class="summary">CLI and macOS menu bar plugin that surfaces the open pull requests actually waiting on you, with a badge when something is new since you last looked.</p>
+        
+                </section>
         </div>
         <div class="container references-container">
             <div class="title">
