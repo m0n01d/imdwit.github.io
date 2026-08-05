@@ -20,9 +20,20 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 const renderHtml = require('resume-cli/build/render-html').default;
 
+// Usage:
+//   node scripts/build-resume.js                       # resume.json -> resume.{html,pdf}
+//   node scripts/build-resume.js <input.json> <outBase> # a tailored variant
+//
+// Keep tailored variants under tailored/, which is gitignored — this repo is
+// public, and a resume aimed at one employer shouldn't be served from it.
+
 const ROOT = path.join(__dirname, '..');
 const THEME = 'macchiato';
-const resume = require(path.join(ROOT, 'resume.json'));
+
+const inputArg = process.argv[2];
+const outBase = process.argv[3] || 'resume';
+const resumePath = path.resolve(ROOT, inputArg || 'resume.json');
+const resume = require(resumePath);
 
 // Layered on top of the theme, not a fork of it.
 const PRINT_CSS = `
@@ -61,9 +72,18 @@ const PRINT_CSS = `
     display: flow-root;
   }
 
+  /* Trailing padding below the last section can spill a few pixels past
+     the final page boundary, which Chromium honours by emitting an extra
+     blank sheet. Nothing renders below the last entry, so drop it. */
   .page {
     height: auto;
     min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .page > *:last-child,
+  .container:last-child {
+    margin-bottom: 0;
   }
 
   /* Tighten vertical rhythm so the whole resume lands on two sheets.
@@ -86,7 +106,7 @@ async function main() {
   const html = await renderHtml({ resume, themePath: THEME });
   const withCss = html.replace('</head>', `<style>${PRINT_CSS}</style></head>`);
 
-  const htmlPath = path.join(ROOT, 'resume.html');
+  const htmlPath = path.join(ROOT, `${outBase}.html`);
   fs.writeFileSync(htmlPath, withCss);
   console.log(`wrote ${path.relative(ROOT, htmlPath)}`);
 
@@ -108,7 +128,7 @@ async function main() {
       new Promise((resolve) => setTimeout(resolve, 8000)),
     ]);
 
-    const pdfPath = path.join(ROOT, 'resume.pdf');
+    const pdfPath = path.join(ROOT, `${outBase}.pdf`);
     await page.pdf({
       path: pdfPath,
       format: 'Letter',

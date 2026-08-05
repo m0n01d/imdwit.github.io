@@ -435,9 +435,18 @@ ul.two-column li {
     display: flow-root;
   }
 
+  /* Trailing padding below the last section can spill a few pixels past
+     the final page boundary, which Chromium honours by emitting an extra
+     blank sheet. Nothing renders below the last entry, so drop it. */
   .page {
     height: auto;
     min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .page > *:last-child,
+  .container:last-child {
+    margin-bottom: 0;
   }
 
   /* Tighten vertical rhythm so the whole resume lands on two sheets.
