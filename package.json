@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files \"*.html, css/*.css\"",
     "serve-resume": "resume serve --theme macchiato",
-    "resume:build": "resume export resume.html --theme macchiato && resume export resume.pdf --theme macchiato"
+    "resume:build": "node scripts/build-resume.js"
   },
   "repository": {
     "type": "git",

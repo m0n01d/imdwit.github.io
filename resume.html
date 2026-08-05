@@ -399,7 +399,62 @@ ul.two-column li {
   border-radius: 5px;
 }
 </style>
-</head>
+<style>
+/* --- build-resume.js: pagination fixes --- */
+@media print {
+  /* The theme avoids breaking inside a whole container, which pushes a
+     tall section onto a fresh page and strands a mostly-empty one. Let
+     containers flow and keep individual entries intact instead. */
+  .container {
+    page-break-inside: auto;
+  }
+
+  .work-container .item,
+  .project-container .item,
+  .publications-container .item,
+  .education-container .item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Never leave a section heading alone at the foot of a page. */
+  .title {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Note: do NOT put page-break-inside on .left-column's children. The
+     sidebar is a float, and making its sections unbreakable pushes the
+     entire column to page 2, leaving page 1 single-column. */
+
+  /* .right-column uses overflow:hidden purely to contain the sidebar
+     float. That clips any content crossing a page boundary, so contain
+     the float with flow-root instead. */
+  .right-column {
+    overflow: visible;
+    display: flow-root;
+  }
+
+  .page {
+    height: auto;
+    min-height: 0;
+  }
+
+  /* Tighten vertical rhythm so the whole resume lands on two sheets.
+     Spacing only — type sizes are untouched. */
+  .container {
+    padding-top: 12px;
+  }
+
+  .item {
+    margin-bottom: 9px;
+  }
+
+  ul {
+    margin-top: 6px;
+  }
+}
+</style></head>
 
 <body>
   <main id="resume" class="page">
