@@ -36,7 +36,7 @@
       "company": "Avetta",
       "position": "Senior Software Engineer",
       "website": "https://www.avetta.com",
-      "startDate": "2024-01-01",
+      "startDate": "2025-01-01",
       "summary": "Full-stack product engineer on Avetta's supplier compliance platform, shipping features across a large production Elm frontend and Scala (http4s/Tapir and Play/MongoDB) backend services.",
       "highlights": [
         "Shipped creator filtering end to end for the Worksite Safety product: refined the epic into per-service tickets, then implemented all of them solo — Elm filter pickers across four list and calendar views, a Scala 3 http4s/Tapir aggregation service, and the Play/MongoDB persistence layer behind it",
