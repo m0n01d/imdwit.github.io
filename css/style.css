@@ -96,6 +96,26 @@ h4 {
   color: #0077b5;
 }
 
+.footer-links__linkedin:hover {
+  color: #005f92;
+}
+
+.footer-links__youtube {
+  color: #cc0000;
+}
+
+.footer-links__youtube:hover {
+  color: #a30000;
+}
+
+.footer-links__resume {
+  color: #4a4a4a;
+}
+
+.footer-links__resume:hover {
+  color: #1a1a1a;
+}
+
 @media (min-width: 76.8rem) {
   .wrapper {
     margin-top: 1rem;
