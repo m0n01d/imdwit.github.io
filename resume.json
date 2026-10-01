@@ -107,14 +107,6 @@
       ]
     },
     {
-      "company": "Trilogy Education Services",
-      "position": "Software Test Engineer",
-      "website": "http://www.trilogyed.com/",
-      "startDate": "2017-03-01",
-      "endDate": "2017-04-22",
-      "summary": "Set up test automation and load tested APIs, from unit testing React components to end-to-end coverage of user flows."
-    },
-    {
       "company": "Startup Media",
       "position": "Frontend Developer",
       "website": "http://startupmedia.com",
