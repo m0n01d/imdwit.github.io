@@ -569,6 +569,7 @@ ul.two-column li {
                                     <h6 class="main-skill skill">Play</h6>
                                     <h6 class="main-skill skill">Node.js</h6>
                                     <h6 class="main-skill skill">Rust</h6>
+                                    <h6 class="main-skill skill">Python</h6>
                                     <h6 class="main-skill skill">MongoDB</h6>
                                     <h6 class="main-skill skill">MySQL</h6>
                             </div>
@@ -735,7 +736,6 @@ ul.two-column li {
                         <li>Onboarded and trained React engineers in Elm and functional programming</li>
                         <li>Shipped tipping, gifting, chat, and live and prerecorded playback features</li>
                         <li>Applied modern responsive design practices to support both mobile and desktop viewers</li>
-                        <li>Delivered robust features in short sprints with engineers, designers, and stakeholders, using agile practices to absorb changing requirements and shortened deadlines</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -756,10 +756,6 @@ ul.two-column li {
         
                     <p class="summary">Helped rewrite an aging PHP application using React and Redux with middleware (redux-observable, redux-saga).</p>
         
-                    <ul>
-                        <li>Learned to structure a large React/Redux application</li>
-                        <li>Picked up the fundamentals of observables with RxJS and honed functional programming skills</li>
-                    </ul>
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
@@ -835,6 +831,53 @@ ul.two-column li {
                 <section class="item">
                     <div class="section-header clearfix">
                         <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/resq" target="_blank">
+                                    resq
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/resq" target="_blank" class="sublink">https://github.com/m0n01d/resq</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                        <h5>Author</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Rust</h6>
+                            <h6 class="skill">ReScript</h6>
+                            <h6 class="skill">CLI</h6>
+                            <h6 class="skill">AI agents</h6>
+                    </div>
+        
+                    <p class="summary">A command-line tool for reading and editing ReScript code, designed for AI agents first. An agent can pull out one function instead of a whole file, and a bad edit never leaves the file half-changed. Ported from elmq.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/rewind" target="_blank">
+                                    rewind
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/rewind" target="_blank" class="sublink">https://github.com/m0n01d/rewind</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+        
+                        <h5>Author</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">ReScript</h6>
+                            <h6 class="skill">React</h6>
+                            <h6 class="skill">Debugger</h6>
+                    </div>
+        
+                    <p class="summary">An Elm-style time-travel debugger for ReScript React apps. Pause a running app, step back through every message and model, see exactly what changed, and export the history as JSON.</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
                                 <a href="https://github.com/m0n01d/elm-peek" target="_blank">
                                     elm-peek
                                         <span class="sublink">∙ <a href="https://github.com/m0n01d/elm-peek" target="_blank" class="sublink">https://github.com/m0n01d/elm-peek</a></span>
@@ -853,31 +896,7 @@ ul.two-column li {
                             <h6 class="skill">Elm</h6>
                     </div>
         
-                    <p class="summary">Browser extension that brings code navigation to Elm on GitHub, which GitHub&#x27;s own stack-graphs don&#x27;t cover. Hover an identifier for its definition and dependents, and get warned when a case expression silently swallows a variant the pull request just added.</p>
-        
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://github.com/m0n01d/resq" target="_blank">
-                                    resq
-                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/resq" target="_blank" class="sublink">https://github.com/m0n01d/resq</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                        </h5>
-                    </div>
-        
-                        <h5>Author</h5>
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Rust</h6>
-                            <h6 class="skill">ReScript</h6>
-                            <h6 class="skill">CLI</h6>
-                            <h6 class="skill">Developer Tooling</h6>
-                    </div>
-        
-                    <p class="summary">A jq-style CLI for querying and editing ReScript source, written in Rust and aimed at AI agents and scripts rather than editors: token-efficient structured reads and validated writes that leave the file byte-identical on failure. Ported from elmq.</p>
+                    <p class="summary">A browser extension that adds go-to-definition for Elm code on GitHub, and warns you when a pull request adds a new variant that some case expression will quietly ignore.</p>
         
                 </section>
                 <section class="item">
@@ -898,33 +917,32 @@ ul.two-column li {
                             <h6 class="skill">JavaScript</h6>
                             <h6 class="skill">Babel</h6>
                             <h6 class="skill">Elm</h6>
-                            <h6 class="skill">DevTools</h6>
                     </div>
         
-                    <p class="summary">Post-compile transform that tags each Elm view function&#x27;s rendered element with the function that produced it, giving Elm the DevTools-style component names it otherwise lacks. No source changes, no wrapper nodes, no runtime library.</p>
+                    <p class="summary">A build step that tags every element on the page with the Elm view function that drew it, so people and AI agents can go straight from the screen to the code.</p>
         
                 </section>
                 <section class="item">
                     <div class="section-header clearfix">
                         <h3 class="bold pull-left">
-                                <a href="https://github.com/m0n01d/elm-browser" target="_blank">
-                                    elm-browser
-                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/elm-browser" target="_blank" class="sublink">https://github.com/m0n01d/elm-browser</a></span>
+                                <a href="https://github.com/m0n01d/elm-storybook-verify-examples" target="_blank">
+                                    elm-storybook-verify-examples
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/elm-storybook-verify-examples" target="_blank" class="sublink">https://github.com/m0n01d/elm-storybook-verify-examples</a></span>
                                 </a>
                         </h3>
                         <h5 class="italic pull-right">
                         </h5>
                     </div>
         
-                        <h5>Contributor</h5>
+                        <h5>Author</h5>
         
                     <div class="flex-container">
                             <h6 class="skill">Elm</h6>
-                            <h6 class="skill">JavaScript</h6>
-                            <h6 class="skill">Debugger</h6>
+                            <h6 class="skill">Storybook</h6>
+                            <h6 class="skill">elm-verify-examples</h6>
                     </div>
         
-                    <p class="summary">Fork of elm/browser that adds state-change highlighting to the time-travel debugger, flashing changed fields and striping their ancestors so you can see what changed instead of re-reading the whole model tree.</p>
+                    <p class="summary">Combines Ryan Haskell-Glatz&#x27;s Elm Storybook setup with elm-verify-examples, so the examples in your doc comments become Storybook stories automatically. One example works as documentation, a test, and a live component preview.</p>
         
                 </section>
                 <section class="item">
@@ -947,18 +965,32 @@ ul.two-column li {
                             <h6 class="skill">macOS</h6>
                     </div>
         
-                    <p class="summary">CLI and macOS menu bar plugin that surfaces the open pull requests actually waiting on you, with a badge when something is new since you last looked.</p>
+                    <p class="summary">A command-line tool and macOS menu bar plugin that shows the pull requests waiting on you, and flags anything new since you last looked.</p>
         
                 </section>
-        </div>
-        <div class="container references-container">
-            <div class="title">
-                <h3>References</h3>
-                <div class="keyline"></div>
-            </div>
-                <section class="item clearfix">
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://github.com/m0n01d/munbyn-print" target="_blank">
+                                    munbyn-print
+                                        <span class="sublink">∙ <a href="https://github.com/m0n01d/munbyn-print" target="_blank" class="sublink">https://github.com/m0n01d/munbyn-print</a></span>
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
         
-                    <h5 class="pull-right"> — References available upon request</h5>
+                        <h5>Author</h5>
+        
+                    <div class="flex-container">
+                            <h6 class="skill">Python</h6>
+                            <h6 class="skill">USB</h6>
+                            <h6 class="skill">Bluetooth</h6>
+                            <h6 class="skill">Hardware</h6>
+                    </div>
+        
+                    <p class="summary">Prints to a Munbyn thermal label printer over USB or Bluetooth without the vendor&#x27;s driver, which doesn&#x27;t run on Apple Silicon. Speaks the printer&#x27;s own command language and works around firmware quirks I found by testing on the real hardware.</p>
+        
                 </section>
         </div>
       </div>

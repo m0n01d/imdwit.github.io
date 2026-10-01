@@ -83,8 +83,7 @@
         "Helped with the upgrade from Elm 0.18 to 0.19 and the migration from BEM-style CSS to TailwindCSS",
         "Onboarded and trained React engineers in Elm and functional programming",
         "Shipped tipping, gifting, chat, and live and prerecorded playback features",
-        "Applied modern responsive design practices to support both mobile and desktop viewers",
-        "Delivered robust features in short sprints with engineers, designers, and stakeholders, using agile practices to absorb changing requirements and shortened deadlines"
+        "Applied modern responsive design practices to support both mobile and desktop viewers"
       ]
     },
     {
@@ -93,11 +92,7 @@
       "website": "http://wbdcorp.com",
       "startDate": "2017-08-08",
       "endDate": "2017-09-19",
-      "summary": "Helped rewrite an aging PHP application using React and Redux with middleware (redux-observable, redux-saga).",
-      "highlights": [
-        "Learned to structure a large React/Redux application",
-        "Picked up the fundamentals of observables with RxJS and honed functional programming skills"
-      ]
+      "summary": "Helped rewrite an aging PHP application using React and Redux with middleware (redux-observable, redux-saga)."
     },
     {
       "company": "UCF Coding Bootcamp",
@@ -134,6 +129,29 @@
   ],
   "projects": [
     {
+      "name": "resq",
+      "url": "https://github.com/m0n01d/resq",
+      "role": "Author",
+      "keywords": [
+        "Rust",
+        "ReScript",
+        "CLI",
+        "AI agents"
+      ],
+      "summary": "A command-line tool for reading and editing ReScript code, designed for AI agents first. An agent can pull out one function instead of a whole file, and a bad edit never leaves the file half-changed. Ported from elmq."
+    },
+    {
+      "name": "rewind",
+      "url": "https://github.com/m0n01d/rewind",
+      "role": "Author",
+      "keywords": [
+        "ReScript",
+        "React",
+        "Debugger"
+      ],
+      "summary": "An Elm-style time-travel debugger for ReScript React apps. Pause a running app, step back through every message and model, see exactly what changed, and export the history as JSON."
+    },
+    {
       "name": "elm-peek",
       "url": "https://github.com/m0n01d/elm-peek",
       "role": "Author",
@@ -143,19 +161,7 @@
         "Chrome Extension",
         "Elm"
       ],
-      "summary": "Browser extension that brings code navigation to Elm on GitHub, which GitHub's own stack-graphs don't cover. Hover an identifier for its definition and dependents, and get warned when a case expression silently swallows a variant the pull request just added."
-    },
-    {
-      "name": "resq",
-      "url": "https://github.com/m0n01d/resq",
-      "role": "Author",
-      "keywords": [
-        "Rust",
-        "ReScript",
-        "CLI",
-        "Developer Tooling"
-      ],
-      "summary": "A jq-style CLI for querying and editing ReScript source, written in Rust and aimed at AI agents and scripts rather than editors: token-efficient structured reads and validated writes that leave the file byte-identical on failure. Ported from elmq."
+      "summary": "A browser extension that adds go-to-definition for Elm code on GitHub, and warns you when a pull request adds a new variant that some case expression will quietly ignore."
     },
     {
       "name": "elm-view-name-injector",
@@ -164,21 +170,20 @@
       "keywords": [
         "JavaScript",
         "Babel",
-        "Elm",
-        "DevTools"
+        "Elm"
       ],
-      "summary": "Post-compile transform that tags each Elm view function's rendered element with the function that produced it, giving Elm the DevTools-style component names it otherwise lacks. No source changes, no wrapper nodes, no runtime library."
+      "summary": "A build step that tags every element on the page with the Elm view function that drew it, so people and AI agents can go straight from the screen to the code."
     },
     {
-      "name": "elm-browser",
-      "url": "https://github.com/m0n01d/elm-browser",
-      "role": "Contributor",
+      "name": "elm-storybook-verify-examples",
+      "url": "https://github.com/m0n01d/elm-storybook-verify-examples",
+      "role": "Author",
       "keywords": [
         "Elm",
-        "JavaScript",
-        "Debugger"
+        "Storybook",
+        "elm-verify-examples"
       ],
-      "summary": "Fork of elm/browser that adds state-change highlighting to the time-travel debugger, flashing changed fields and striping their ancestors so you can see what changed instead of re-reading the whole model tree."
+      "summary": "Combines Ryan Haskell-Glatz's Elm Storybook setup with elm-verify-examples, so the examples in your doc comments become Storybook stories automatically. One example works as documentation, a test, and a live component preview."
     },
     {
       "name": "pr-digest",
@@ -189,7 +194,19 @@
         "GitHub API",
         "macOS"
       ],
-      "summary": "CLI and macOS menu bar plugin that surfaces the open pull requests actually waiting on you, with a badge when something is new since you last looked."
+      "summary": "A command-line tool and macOS menu bar plugin that shows the pull requests waiting on you, and flags anything new since you last looked."
+    },
+    {
+      "name": "munbyn-print",
+      "url": "https://github.com/m0n01d/munbyn-print",
+      "role": "Author",
+      "keywords": [
+        "Python",
+        "USB",
+        "Bluetooth",
+        "Hardware"
+      ],
+      "summary": "Prints to a Munbyn thermal label printer over USB or Bluetooth without the vendor's driver, which doesn't run on Apple Silicon. Speaks the printer's own command language and works around firmware quirks I found by testing on the real hardware."
     }
   ],
   "skills": [
@@ -230,6 +247,7 @@
         "Play",
         "Node.js",
         "Rust",
+        "Python",
         "MongoDB",
         "MySQL"
       ]
@@ -265,11 +283,6 @@
         "Outdoor Recreation",
         "Travel"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "References available upon request"
     }
   ]
 }
