@@ -68,7 +68,7 @@
       "highlights": [
         "Built the scheduled-stream and livestreaming tools used by artists like Jennifer Lopez and DJ Khaled to entertain thousands of fans",
         "Powered the Verzuz battle series, including realtime audience voting during broadcasts",
-        "Reverse engineered web applications to bridge Halogen with Triller's existing platform"
+        "Picked up a lasting habit of reverse engineering web apps to see how they work"
       ]
     },
     {
@@ -80,7 +80,7 @@
       "summary": "Built Halogen, a live streaming platform for artists and creatives, using Elm, JavaScript, and Web Components.",
       "highlights": [
         "Grew Halogen past 120k lines of Elm; the platform was acquired by Triller",
-        "Led the upgrade from Elm 0.18 to 0.19 and the migration from BEM-style CSS to TailwindCSS",
+        "Helped with the upgrade from Elm 0.18 to 0.19 and the migration from BEM-style CSS to TailwindCSS",
         "Onboarded and trained React engineers in Elm and functional programming",
         "Shipped tipping, gifting, chat, and live and prerecorded playback features",
         "Applied modern responsive design practices to support both mobile and desktop viewers",
