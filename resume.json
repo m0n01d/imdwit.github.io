@@ -36,7 +36,6 @@
         "Shipped creator filtering end to end for the Worksite Safety product: refined the epic into per-service tickets, then implemented all of them solo — Elm filter pickers across four list and calendar views, a Scala 3 http4s/Tapir aggregation service, and the Play/MongoDB persistence layer behind it",
         "Worked on the formula builder in the forms configuration tool, which lets configuration engineers author, save, and live-test scoring calculations without engineering involvement",
         "Delivered review-chain management for client admins: site-specific settings pages, clear-all and revert-to-default flows, and safe-deletion UX with server-driven delete permissions and 409 conflict handling",
-        "Shipped membership and connection-lifecycle features in the Connect product: renewal-date visibility for clients, connection removal and reconnect flows, and search and filtering on connections pages",
         "Raised the team's code review bar with 400+ review comments across 180+ PRs, and distilled the org's ~3,400-comment PR review history into living Elm and Scala style guides the team reviews against",
         "Built internal dev tooling, including a runtime Elm view inspector that maps any rendered DOM element back to its source function and line, with a component-tree overlay and lazy-render diagnostics"
       ]
@@ -114,16 +113,45 @@
       "endDate": "2017-07-11",
       "summary": "Built frontend applications with designers, DBAs, and stakeholders, including gogreenback.com.",
       "highlights": [
-        "Built gogreenback's web app in Angular.js, plus the webviews used by its iOS and Android apps",
-        "Built an early company website in Backbone.js and a client dashboard in Node.js and Angular.js"
+        "Built gogreenback's web app in Angular.js, plus the webviews used by its iOS and Android apps"
       ]
     }
   ],
   "projects": [
     {
+      "name": "Ternpike",
+      "url": "https://ternpike.com",
+      "keywords": [
+        "Elm",
+        "Tailwind",
+        "PouchDB",
+        "Claude API"
+      ],
+      "summary": "A local-first trip expense tracker written in Elm. Snap a receipt and Claude fills in the expense, with your data stored on your device first."
+    },
+    {
+      "name": "Snapkin",
+      "url": "https://snapkin.tools",
+      "keywords": [
+        "ReScript",
+        "Mobile web",
+        "CAD"
+      ],
+      "summary": "Calipers in, CAD out. Photograph each face of a part, tap two edges, enter your caliper reading, and Snapkin exports the dimensions for Fusion."
+    },
+    {
+      "name": "Sandlot Derby",
+      "url": "https://github.com/m0n01d/sandlot-derby",
+      "keywords": [
+        "Swift",
+        "SpriteKit",
+        "Game physics"
+      ],
+      "summary": "A minimalist home run derby for iOS. Swipe through the pitch to swing: the direction sets the angle, the speed sets the power, and the ball flies with real air drag. Prototyped in the browser first, then built on a tested pure-Swift physics core."
+    },
+    {
       "name": "resq",
       "url": "https://github.com/m0n01d/resq",
-      "role": "Author",
       "keywords": [
         "Rust",
         "ReScript",
@@ -135,7 +163,6 @@
     {
       "name": "rewind",
       "url": "https://github.com/m0n01d/rewind",
-      "role": "Author",
       "keywords": [
         "ReScript",
         "React",
@@ -146,7 +173,6 @@
     {
       "name": "elm-peek",
       "url": "https://github.com/m0n01d/elm-peek",
-      "role": "Author",
       "keywords": [
         "ReScript",
         "React",
@@ -158,7 +184,6 @@
     {
       "name": "elm-view-name-injector",
       "url": "https://github.com/m0n01d/elm-view-name-injector",
-      "role": "Author",
       "keywords": [
         "JavaScript",
         "Babel",
@@ -169,7 +194,6 @@
     {
       "name": "elm-storybook-verify-examples",
       "url": "https://github.com/m0n01d/elm-storybook-verify-examples",
-      "role": "Author",
       "keywords": [
         "Elm",
         "Storybook",
@@ -180,7 +204,6 @@
     {
       "name": "pr-digest",
       "url": "https://github.com/m0n01d/pr-digest",
-      "role": "Author",
       "keywords": [
         "Python",
         "GitHub API",
@@ -191,7 +214,6 @@
     {
       "name": "munbyn-print",
       "url": "https://github.com/m0n01d/munbyn-print",
-      "role": "Author",
       "keywords": [
         "Python",
         "USB",
@@ -240,6 +262,7 @@
         "Node.js",
         "Rust",
         "Python",
+        "Swift",
         "MongoDB",
         "MySQL"
       ]
