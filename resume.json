@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Dwight Doane",
-    "label": "Elm && Scala Developer",
+    "label": "Frontend && Full-Stack Engineer",
     "picture": "",
     "email": "dwightdoane@me.com",
     "phone": "(904) 330-8499",
-    "summary": "Software engineer with over a decade of experience shipping quality features and building high-performance teams. Works across the stack in Elm and Scala, and specializes in functional programming: leading rewrites, setting standards, and bringing React engineers along for the ride. Builds and open sources developer tooling for the Elm and ReScript ecosystems.",
+    "summary": "I like knowing how things work, which is how I got into reverse engineering web apps and building my own dev tools. That's taken me through more than a decade on the web, mostly in Elm, from live streaming to compliance software. Along the way I've taught bootcamp students, brought plenty of engineers into functional programming, and started building tools for AI agents.",
     "location": {
       "postalCode": "32205",
       "city": "Jacksonville",
@@ -31,13 +31,13 @@
       "position": "Software Engineer II",
       "website": "https://www.avetta.com",
       "startDate": "2025-01-01",
-      "summary": "Full-stack product engineer on Avetta's supplier compliance platform, shipping features across a large production Elm frontend and Scala (http4s/Tapir and Play/MongoDB) backend services.",
+      "summary": "Full-stack work on Avetta's supplier compliance platform: a large production Elm frontend talking to Scala services.",
       "highlights": [
-        "Shipped creator filtering end to end for the Worksite Safety product: refined the epic into per-service tickets, then implemented all of them solo — Elm filter pickers across four list and calendar views, a Scala 3 http4s/Tapir aggregation service, and the Play/MongoDB persistence layer behind it",
-        "Worked on the formula builder in the forms configuration tool, which lets configuration engineers author, save, and live-test scoring calculations without engineering involvement",
-        "Delivered review-chain management for client admins: site-specific settings pages, clear-all and revert-to-default flows, and safe-deletion UX with server-driven delete permissions and 409 conflict handling",
-        "Raised the team's code review bar with 400+ review comments across 180+ PRs, and distilled the org's ~3,400-comment PR review history into living Elm and Scala style guides the team reviews against",
-        "Built internal dev tooling, including a runtime Elm view inspector that maps any rendered DOM element back to its source function and line, with a component-tree overlay and lazy-render diagnostics"
+        "Owned creator filtering for Worksite Safety from start to finish. Broke the epic into a ticket per service, then built all of them: the Elm filter UI on four list and calendar views, a new Scala 3 aggregation service (http4s/Tapir), and the Play/MongoDB storage behind it",
+        "Worked on the formula builder in our forms configuration tool, which lets configuration engineers write, save, and test scoring formulas themselves instead of waiting on an engineer",
+        "Built the settings screens client admins use to manage review chains, including the unglamorous parts: reset to defaults, clear all, and deletes that explain themselves when the server says no",
+        "Built an in-app Elm inspector for the team. Point at anything on the page and it tells you which view function rendered it, and on what line",
+        "Left 400+ review comments across 180+ PRs, and turned about 3,400 past review comments from across the org into Elm and Scala style guides the team now reviews against"
       ]
     },
     {
@@ -46,15 +46,13 @@
       "website": "https://carerev.com",
       "startDate": "2021-08-14",
       "endDate": "2023-06-16",
-      "summary": "Rewrote CareRev's React-based Facility app as a modern Elm application, on a platform that helps hospitals staff qualified nurses and gives nurses control of their careers.",
+      "summary": "Kicked off and architected the rewrite of CareRev's facility app from React to Elm. The app helped hospitals find and book qualified nurses.",
       "highlights": [
-        "Re-architected the start of CareRev's React to Elm rewrite",
-        "Shipped high-impact features and services like Smart Rates to high-profile clients, saving them time and money",
-        "Mentored junior engineers and trained senior engineers on pure functional concepts",
-        "Onboarded engineers of every skill level into an Elm codebase, and set the code practices and standards for Elm development",
-        "Built codegen tooling to automate tedious work like Amplitude tracking and tracking-plan updates",
-        "Implemented a design system in TailwindCSS with designers, and set up Storybook to visualize it alongside reusable UI",
-        "Conducted hiring interviews and authored the code challenges used to vet candidates"
+        "Got engineers of every level productive in Elm, from juniors to seniors new to functional programming, and wrote the team's Elm conventions",
+        "Shipped Smart Rates and other features that saved large hospital clients time and money",
+        "Built a design system in Tailwind with our designers, plus a Storybook so everyone could see and reuse the pieces",
+        "Wrote codegen scripts to handle tedious work, like keeping Amplitude tracking in sync with the tracking plan",
+        "Interviewed candidates and wrote the code challenges we hired with"
       ]
     },
     {
@@ -63,11 +61,10 @@
       "website": "https://triller.co",
       "startDate": "2020-09-04",
       "endDate": "2021-08-01",
-      "summary": "Rebuilt Halogen and integrated it into Triller's platform after the acquisition, adding live streaming and a web app to their suite of tools.",
+      "summary": "Rebuilt Halogen, our live streaming platform, inside Triller after they acquired it.",
       "highlights": [
-        "Built the scheduled-stream and livestreaming tools used by artists like Jennifer Lopez and DJ Khaled to entertain thousands of fans",
-        "Powered the Verzuz battle series, including realtime audience voting during broadcasts",
-        "Picked up a lasting habit of reverse engineering web apps to see how they work"
+        "Artists like Jennifer Lopez and DJ Khaled used our scheduled and live streaming tools to perform for thousands of fans",
+        "Our platform hosted the Verzuz battle series, where viewers voted on who was winning in real time"
       ]
     },
     {
@@ -76,13 +73,13 @@
       "website": "https://omicronmedia.com",
       "startDate": "2017-11-13",
       "endDate": "2020-09-04",
-      "summary": "Built Halogen, a live streaming platform for artists and creatives, using Elm, JavaScript, and Web Components.",
+      "summary": "Built Halogen, a live streaming platform for artists and creators, in Elm, JavaScript, and Web Components.",
       "highlights": [
-        "Grew Halogen past 120k lines of Elm; the platform was acquired by Triller",
-        "Helped with the upgrade from Elm 0.18 to 0.19 and the migration from BEM-style CSS to TailwindCSS",
-        "Onboarded and trained React engineers in Elm and functional programming",
-        "Shipped tipping, gifting, chat, and live and prerecorded playback features",
-        "Applied modern responsive design practices to support both mobile and desktop viewers"
+        "Grew it past 120k lines of Elm before Triller acquired it",
+        "Built the interactive side of a stream: tipping, gifting, chat, and live and prerecorded playback",
+        "Helped move the app from Elm 0.18 to 0.19, and from BEM-style CSS to Tailwind",
+        "Taught incoming React engineers Elm and functional programming",
+        "Built responsive layouts so fans could watch on a phone or a desktop"
       ]
     },
     {
@@ -91,7 +88,7 @@
       "website": "http://wbdcorp.com",
       "startDate": "2017-08-08",
       "endDate": "2017-09-19",
-      "summary": "Helped rewrite an aging PHP application using React and Redux with middleware (redux-observable, redux-saga)."
+      "summary": "Helped rewrite an aging PHP app in React and Redux (redux-observable, redux-saga)."
     },
     {
       "company": "UCF Coding Bootcamp",
@@ -99,10 +96,10 @@
       "website": "https://codingbootcamp.ce.ucf.edu/",
       "startDate": "2016-06-23",
       "endDate": "2017-08-16",
-      "summary": "Taught and supported students across HTML5, CSS3, JavaScript, jQuery, Node.js, responsive design, Heroku, Git, user authentication, Laravel, React.js, MySQL, and MongoDB. Graded homework and provided in-class and virtual assistance.",
+      "summary": "Taught web development to bootcamp students, from HTML and CSS through Node, React, and databases. Filled in as instructor, graded homework, and helped students in class and online.",
       "highlights": [
-        "Gave extracurricular lectures on topics students needed but the curriculum skipped: ES6 features, functional programming techniques, and Git fundamentals",
-        "Discovered a lasting passion for education and mentoring"
+        "Ran extra sessions on things the curriculum skipped, like ES6, functional programming, and Git basics",
+        "Found out here how much I like teaching and mentoring"
       ]
     },
     {
@@ -111,9 +108,9 @@
       "website": "http://startupmedia.com",
       "startDate": "2015-11-01",
       "endDate": "2017-07-11",
-      "summary": "Built frontend applications with designers, DBAs, and stakeholders, including gogreenback.com.",
+      "summary": "Built frontend apps with designers, DBAs, and stakeholders, including gogreenback.com.",
       "highlights": [
-        "Built gogreenback's web app in Angular.js, plus the webviews used by its iOS and Android apps"
+        "Built gogreenback's web app in Angular.js, plus the webviews inside its iOS and Android apps"
       ]
     }
   ],
@@ -229,10 +226,10 @@
       "level": "Senior",
       "keywords": [
         "Elm",
-        "Scala",
         "JavaScript",
         "ReScript",
-        "Semantic HTML",
+        "Scala",
+        "HTML",
         "CSS",
         "Learning Haskell and PureScript"
       ]
@@ -243,8 +240,6 @@
       "keywords": [
         "React",
         "Redux",
-        "Vue",
-        "Vuex",
         "TailwindCSS",
         "Storybook",
         "Web Components",
@@ -253,18 +248,25 @@
       ]
     },
     {
-      "name": "Backend && Systems",
+      "name": "Backend",
       "level": "Intermediate",
       "keywords": [
         "http4s",
         "Tapir",
         "Play",
         "Node.js",
-        "Rust",
-        "Python",
-        "Swift",
         "MongoDB",
         "MySQL"
+      ]
+    },
+    {
+      "name": "Also Writes",
+      "level": "Working knowledge",
+      "keywords": [
+        "TypeScript",
+        "Rust",
+        "Python",
+        "Swift"
       ]
     },
     {
@@ -272,13 +274,12 @@
       "level": "Senior",
       "keywords": [
         "Functional Programming",
-        "Git",
-        "Testing",
-        "Agile",
         "Code Review",
+        "Testing",
         "Teaching",
         "Mentoring",
-        "Interviewing"
+        "Interviewing",
+        "AI-assisted development"
       ]
     }
   ],
